@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Playwrite+HU:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    margin: 0; /* Adjust margin to remove default margins */
+    text-align: center;
+    font-weight: 1000;
+    background-image: url("anime.png");
+    color: gold;
+    font-size: xxx-large;
+    text-shadow: 4px 4px 8px #000000;
+}
+
+
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px gold;
+}
+
+/* Animate the button on hover */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: crimson;
+    color: white;
+    box-shadow: 0 0 15px crimson;
+    transition: all 0.3s ease-in-out;  /* Smooth transition for hover effect */
+}
+
+button:hover {
+    box-shadow: 0 0 25px gold;  /* Hover effect: glowing shadow */
+    transform: scale(1.1);  /* Hover effect: scale the button */
+}
+
+
+/* Fade-in effect for the result */
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    text-shadow: 2px 2px 5px #000000;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 1s ease-in-out forwards; /* Apply fadeIn animation */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Start fully transparent */
+    }
+    100% {
+        opacity: 1; /* End fully visible */
+    }
+}
+
+
+@media (max-width: 768px) {
+    body {
+        margin: 20px;
+        font-size: large;
+    }
+
+    input {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .result {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: medium;
+        margin: 10px;
+    }
+}
